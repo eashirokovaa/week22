@@ -1,7 +1,7 @@
 import Chart from 'chart.js/auto';
 const ctx = document.getElementById('myChart');
     
-      new Chart(ctx, {
+  let myChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
