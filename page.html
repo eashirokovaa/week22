@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container {
+        width: 70%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      .chart-wrap {
+        padding-left: 150px;
+      }
+      
+    </style>
   </head>
   <body>
-    <div>
-      <canvas id="myChart"></canvas>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+      <div class="chart-wrap">
+        <canvas class="pieChart" id="myPieChart" height="400px"></canvas>
+      </div>
     </div>
 
-    <script src="/script.js" >
-      
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
